@@ -1,6 +1,6 @@
 import fs from "fs";
 
-async function day1Task(callback) {
+function day1Task(callback) {
   const results: number[] = [];
   fs.readFile("resources/input_day1.txt", "utf8", (err, data) => {
     if (err) {
