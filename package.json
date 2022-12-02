@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "day:1": "tsc && node dist/day1.js",
+    "day:2": "tsc && node dist/day2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
