@@ -7,6 +7,8 @@
     "build": "npx tsc",
     "day:1": "tsc && node dist/day1.js",
     "day:2": "tsc && node dist/day2.js",
+    "day:3": "tsc && node dist/day3.js",
+    "day:4": "tsc && node dist/day4.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
