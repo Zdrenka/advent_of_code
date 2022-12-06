@@ -1,66 +1,3 @@
-// import fs from "fs";
-
-// // function day3Task(task: number) {
-// //   fs.readFile("resources/input_day3.txt", "utf8", (err, data) => {
-// //     if (err) {
-// //       console.error(err);
-// //       return;
-// //     }
-// //     const lines = data.split("\n");
-// //     lines.forEach((line) => {
-// //       const length = line.length;
-// //       const first = line.substring(0, length / 2);
-// //       const second = line.substring(length / 2);
-// //       first.split("").forEach((char, index) => {
-// //         second.includes(char);
-// //         console.log(char);
-// //       });
-// //     });
-// //   });
-// // }
-
-// function day3Task(callback) {
-//   const results = new Set();
-//   fs.readFile("resources/input_day3.txt", "utf8", (err, data) => {
-//     if (err) {
-//       console.error(err);
-//       return;
-//     }
-//     const lines = data.split("\n");
-//     lines.forEach((line) => {
-//       const length = line.length;
-//       const first = line.substring(0, length / 2);
-//       const second = line.substring(length / 2);
-//       first.split("").forEach((char, index) => {
-//         if (second.includes(char)) {
-//           results.add(char);
-//         }
-//       });
-//     });
-//     callback(results);
-//   });
-// }
-
-// function firstStar() {
-//   let sum = 0;
-//   day3Task(function (results, err) {
-//     results.forEach((result) => {
-//       let value = result.charCodeAt(0) - 96;
-//       if (value < 0) {
-//         //capital letter
-//         value = result.toUpperCase().charCodeAt(0) - 64 + 26;
-//         sum += value;
-//       } else {
-//         sum += value;
-//       }
-//       console.log(result, value);
-//     });
-//     console.log(sum);
-
-//     // console.log(...results);
-//   });
-// }
-
 // const fs = require("fs");
 // const input = fs.readFileSync("resources/input_day3.txt", "utf8");
 
@@ -111,10 +48,9 @@
 
 // console.log(result);
 
-const fs = require("fs");
-const input = fs.readFileSync("resources/input_day3.txt", "utf8");
+import { day3 } from "../../data";
 
-const row = input.split("\n") as string[];
+const row = day3.split("\n") as string[];
 
 function getShared(one: string, two: string, three: string): string | null {
   const first = new Set();

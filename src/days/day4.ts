@@ -1,7 +1,6 @@
-import fs from "fs";
-const input = fs.readFileSync("resources/input_day4.txt", "utf8");
+import { day4 } from "../../data";
 
-const lines = input.split("\n") as string[];
+const lines = day4.split("\n") as string[];
 
 type Pair = {
   from: number;

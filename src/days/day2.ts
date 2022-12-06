@@ -1,5 +1,4 @@
-import fs from "fs";
-
+import { day2 } from "../../data";
 let score = 0;
 
 function generateScore(task: number, line: String) {
@@ -34,17 +33,11 @@ function generateScore(task: number, line: String) {
   }
 }
 function day2Task(task: number) {
-  fs.readFile("resources/input_day2.txt", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    const lines = data.split("\n");
-    lines.forEach((line) => {
-      generateScore(task, line);
-    });
-    console.log(score);
+  const lines = day2.split("\n");
+  lines.forEach((line) => {
+    generateScore(task, line);
   });
+  console.log(score);
 }
 
 day2Task(2);

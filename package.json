@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "day:1": "tsc && node dist/day1.js",
-    "day:2": "tsc && node dist/day2.js",
-    "day:3": "tsc && node dist/day3.js",
-    "day:4": "tsc && node dist/day4.js",
+    "day:1": "tsc && node dist/src/days/day1.js",
+    "day:2": "tsc && node dist/src/days/day2.js",
+    "day:3": "tsc && node dist/src/days/day3.js",
+    "day:4": "tsc && node dist/src/days/day4.js",
+    "day:5": "tsc && node dist/src/days/day5.js",
+    "day:6": "tsc && node dist/src/days/day6.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Karl Lankester-Carthy",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.1",
