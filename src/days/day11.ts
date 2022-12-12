@@ -40,8 +40,6 @@ function monkeyBusiness(part: number) {
   const monkeys = day11.split("\n\n").map(parseMonkey);
   const rounds = part === 1 ? 20 : 10000;
 
-  // A comment on reddit told me to use lcm as the base
-  // It's just the product since they are all prime
   const lcm = monkeys.reduce((product, monkey) => product * monkey.divisor, 1);
 
   const worryLevel =
