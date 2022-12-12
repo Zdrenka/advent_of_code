@@ -12,6 +12,10 @@
     "day:5": "tsc && node dist/src/days/day5.js",
     "day:6": "tsc && node dist/src/days/day6.js",
     "day:7": "tsc && node dist/src/days/day7.js",
+    "day:8": "tsc && node dist/src/days/day8.js",
+    "day:9": "tsc && node dist/src/days/day9.js",
+    "day:10": "tsc && node dist/src/days/day10.js",
+    "day:11": "tsc && node dist/src/days/day11.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
